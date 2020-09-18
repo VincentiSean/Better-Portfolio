@@ -184,6 +184,7 @@ html {
 
 #navlinks-div li {
   display: block;
+  margin-top: 20px;
 }
 
 #hero-center-div {
@@ -456,7 +457,7 @@ html {
 --------------------- */
 
 .proj-hero-title {
-  color: #ff6600;
+  color: #ff7c25;
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 2.5rem;
@@ -488,7 +489,7 @@ html {
 }
 
 .word-headings {
-  color: #ff6600;
+  color: #ff7c25;
   font-weight: 600;
   margin: 50px 0 75px 10px;
   letter-spacing: 3px;
@@ -509,7 +510,7 @@ html {
 }
 
 .mini-heading-number {
-  background-color: #ff6600;
+  background-color: #ff7c25;
   border-radius: 50%;
   color: #fff;
   margin: -8px 15px 0 0;
@@ -592,9 +593,8 @@ html {
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 1.5px;
-  margin-left: 50px;
-  margin-right: -30px;
-  padding: 4px 30px 5px 8px;
+  margin: 0 -30px 0 50px;
+  padding: 8px 30px 9px 10px;
   text-decoration: none;
   text-transform: uppercase;
   z-index: 10;
@@ -616,15 +616,15 @@ html {
 }
 
 #project-link:before { 
-  bottom: 39px;
+  bottom: 54px;
 }
 
 #contact-link:before {
-  bottom: 14px;
+  bottom: 10px;
 }
 
 #project-link:hover:before, #contact-link:hover:before {
-  transform: scale(0.44);
+  transform: scale(1);
 }
 
 .social-links {
@@ -685,6 +685,7 @@ html {
   font-size: 0.8rem;
   margin: 0 auto;
   padding: 10px 10px 10px 0;
+  transition: border 250ms ease-in-out;
   width: 80%;
 }
 
@@ -692,15 +693,17 @@ html {
   margin-top: 15px;
 }
 
-.contact-input:focus {
+.contact-input:focus, .contact-input:active {
   color: #fff;
-  border-color: #DDD;
+  border-bottom: 2px solid #FFF;
+  outline: none;
+  text-transform: uppercase;
 }
 
-.contact-input:invalid {
-  border: none;
-  border-bottom: 1px solid #f00000;
-  outline: none;
+input:-moz-ui-invalid {
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
 }
 
 #submit-btn {
@@ -732,7 +735,7 @@ html {
 --------------------- */
 
 .proj-ref-link {
-  color: #ff6600;
+  color: #ff7c25;
   text-decoration: none;
 }
 
@@ -1105,7 +1108,7 @@ html {
   #project-link:before,
   #contact-link:before {
     height: 3px;
-    bottom: 14px;
+    bottom: 8px;
   }
 
   #project-link:before { 
@@ -1113,12 +1116,15 @@ html {
   }
 
   #contact-link:before {
-    left: 228px;
+    left: 229px;
   }
 
-  #project-link:hover:before, 
+  #project-link:hover:before {
+    transform: scale(0.369);
+  }
+
   #contact-link:hover:before {
-    transform: scale(0.26);
+    transform: scale(0.364);
   }
 
   .contact-text {
